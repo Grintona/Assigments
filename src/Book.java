@@ -13,7 +13,7 @@ public class Book {
 
     }
 
-   public int  getId(){
+    public int  getId(){
         return id;
     }
     public String getTitle(){
@@ -42,7 +42,7 @@ public class Book {
             }
         }
    // setter Author
-    public void setAuthor(String author){
+    public  void setAuthor(String author){
         if((author.length() < 0) || (author == null)) System.out.println("author is null or empty");
         else this.author = author;
     }
@@ -66,6 +66,6 @@ public class Book {
     }
 
     public String toString(){
-        return "id= " + id + " " + "title- " + title + " " +"author- "+ author + " " + "Year- " + year;
+        return "id= " + id + " " + "title- " + title + " " +"author- "+ author + " " + "Year- " + year + " " + "Available "+ available ;
     }
 }
