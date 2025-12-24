@@ -1,15 +1,21 @@
 public class Book {
     private int id;
-    static int idGen = 0;
+    private static int idGen = 1;
     private String title;
     private String author;
     private int year ;
     private boolean available;
 
     public Book(){
-        idGen = idGen++;
+        this.idGen = idGen++;
     }
+
     public Book(String title, String author, int year){
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.available = true;
+    this.idGen = idGen++;
 
     }
 
@@ -30,7 +36,7 @@ public class Book {
     }
 
     public void setId(int id){
-        id = idGen;
+        this.id = idGen;
     }
 
     // Setter Title
