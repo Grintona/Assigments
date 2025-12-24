@@ -12,27 +12,21 @@ public  class LibraryApp {
             switch (choise) {
                 case 1:
                     PrintAllBooks();
-                    choise = 10;
                     break;
                 case 2:
                     AddNewBook();
-                    choise = 10;
                     break;
                 case 3:
                     SearchBookByTitle();
-                    choise = 10;
                     break;
                 case 4:
                     BorrowBook();
-                    choise = 10;
                     break;
                 case 5:
                     ReturnBook();
-                    choise = 10;
                     break;
                 case 6:
                     DeleteBook();
-                    choise = 10;
                     break;
                 case 7:
                     break;
