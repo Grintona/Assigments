@@ -41,7 +41,7 @@ public class Book {
 
     // Setter Title
     public void setTitle(String title){
-        if((title.length() < 0) || (title == null)){
+        if(title.isEmpty()){
             System.out.println("title is null or empty");
         }
         else{this.title = title;

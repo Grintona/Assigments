@@ -59,17 +59,14 @@ public  class LibraryApp {
     // Adding new book
     private void AddNewBook() {
         s.nextLine();
-        Book book = new Book();
+
         System.out.println("Write title: ");
         String title = s.nextLine();
         System.out.print("Write author: ");
         String author = s.nextLine();
         System.out.print("Write year: ");
         int year = s.nextInt();
-        book.setTitle(title);
-        book.setAuthor(author);
-        book.setYear(year);
-        book.setAvailable(true);
+        Book book = new Book(title, author, year);
         books.add(book);
     }
 
